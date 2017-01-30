@@ -1,11 +1,39 @@
-var app = angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router']);
+var app = angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
-//app.run(['$rootScope',function($rootScope){
-   // console.log("Testing");
- // }]);
-app.controller('MainController','ngAnimate', 
-function($scope,ngAnimate) {
+.run(['$rootScope',function($rootScope){
+    console.log("Testing");
+  }]);
+.filter('searchFor', function() {
+
+  // All filters must return a function. The first parameter
+  // is the data that is to be filtered, and the second is an
+  // argument that may be passed with a colon (searchFor:searchString)
+
+  return function(arr, searchString) {
+
+    if (!searchString) {
+      return arr;
+    }
+
+    var result = [];
+
+    searchString = searchString.toLowerCase();
+
+    // Using the forEach helper method to loop through the array
+    angular.forEach(arr, function(item) {
+
+      if (title.header.toLowerCase().indexOf(searchString) !== -1) {
+        result.push(item);
+      }
+
+    });
+
+    return result;
+  };
+
+}).controller('MainController',['$scope','ngAnimate', 'searchFor',
+function($scope,ngAnimate,searchFor) {
 
 
   // $scope.panesB = [{
@@ -69,7 +97,7 @@ function($scope,ngAnimate) {
     });
   }
 
-});
+}]);
 
 
 app.filter('searchFor', function() {
