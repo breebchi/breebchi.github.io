@@ -3,7 +3,7 @@ var app = angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria',
 
 .run(['$rootScope',function($rootScope){
     console.log("Testing");
-  }]);
+  }])
 .filter('searchFor', function() {
 
   // All filters must return a function. The first parameter
