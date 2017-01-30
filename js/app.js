@@ -1,4 +1,6 @@
-var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
+var app = angular.module('myApp', ['ngRoute']);
+//var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
+
 app.run(['$rootScope',function($rootScope){
     console.log("Testing");
   }]);
