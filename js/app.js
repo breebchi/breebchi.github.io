@@ -1,10 +1,10 @@
 (function() {
 //angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
-    angular.module('myApp', ['ngAnimate','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
+  var app =  angular.module('myApp', ['ngRoute','ngAnimate','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router']);
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
 
-.controller('MainController',['$scope', 'searchFor',
+app.controller('MainController',['$scope', 'searchFor',
 function($scope,searchFor) {
 
 
@@ -69,7 +69,8 @@ function($scope,searchFor) {
     });
   }
 
-}]).filter('searchFor', function() {
+}]);
+    app.filter('searchFor', function() {
 
   // All filters must return a function. The first parameter
   // is the data that is to be filtered, and the second is an
@@ -98,7 +99,7 @@ function($scope,searchFor) {
   };
 
 });
-       // .run(['$rootScope',function($rootScope){  console.log("Testing");  }]);
+       app.run(['$rootScope',function($rootScope){  console.log("Testing");  }]);
 
 
 
