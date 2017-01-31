@@ -1,0 +1,50 @@
+---
+layout: angularjs
+title: Tickets, Angularjs demo
+---
+
+
+<div class="container" ng-app="app" ng-controller="mainController">
+  
+  <div class="text-center">
+    <p>Example of Angular and the normal Bootstrap JavaScript components</p>
+    <p class="text-danger">Not the best option</p>
+  </div>
+  
+  <h2>Buttons</h2>    
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary">
+      <input type="checkbox" ng-model="bigData.breakfast" checked> Breakfast
+    </label>
+    <label class="btn btn-primary">
+      <input type="checkbox" ng-model="bigData.lunch" > Lunch
+    </label>
+    <label class="btn btn-primary">
+      <input type="checkbox" ng-model="bigData.dinner"> Dinner
+    </label>
+  </div>
+  <pre><code>{{ bigData | json}}</code></pre>
+  
+  <h2>Collapse</h2>
+  
+  <a href="#" class="btn btn-primary" ng-click="isCollapsed = !isCollapsed">
+    Toggle Panel
+  </a>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  
+  <pre><code>{{ isCollapsed }}</code></pre>
+  
+</div>
