@@ -1,6 +1,6 @@
 (function() {
 //angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
-    angular.module('myApp', ['ngRoute'])
+    angular.module('myApp', [])
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
 .run(['$rootScope',function($rootScope){
