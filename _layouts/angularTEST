@@ -13,7 +13,7 @@
   <!-- Google fonts -->
 
   <!-- Styles -->
-<link rel="stylesheet" type="text/css" href="/css/mainTEST.css">
+<link rel="stylesheet" type="text/css" href="/css/maintest.css">
 
   <!-- CDN lib files -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
@@ -27,7 +27,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.0/ui-bootstrap.min.js"></script>
 
-  <script src="/js/appTEST.js"></script>
+  <script src="/js/apptest.js"></script>
 
 
 
