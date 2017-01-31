@@ -88,6 +88,7 @@ function($scope,ngAnimate,searchFor) {
       content: "Content - 2"
     }
   ];
+  $scope.groupsString = JSON.stringify( $scope.groups);
 
   $scope.updateOpenStatus = function(){
     $scope.isOpen = $scope.groups.some(function(item){
