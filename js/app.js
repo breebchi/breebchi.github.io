@@ -97,9 +97,8 @@ function($scope,searchFor) {
     });
   }
 
-}]).run(['$rootScope',function($rootScope){
-    console.log("Testing");
-  }]);
+}]);
+       // .run(['$rootScope',function($rootScope){  console.log("Testing");  }]);
 
 
 
