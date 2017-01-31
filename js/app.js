@@ -1,7 +1,10 @@
-(function(angular) {
-angular.module('myApp', ['ngRoute','ngAnimate', 'ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
+(function() {
+angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
+.run(['$rootScope',function($rootScope){
+    console.log("Testing");
+  }])
 .filter('searchFor', function() {
 
   // All filters must return a function. The first parameter
@@ -30,8 +33,8 @@ angular.module('myApp', ['ngRoute','ngAnimate', 'ngAria', 'ui.bootstrap', 'ngMat
     return result;
   };
 
-}).controller('MainController',['$scope','ngAnimate', 'searchFor',
-function($scope,ngAnimate,searchFor) {
+}).controller('MainController',['$scope', 'searchFor',
+function($scope,searchFor) {
 
 
   // $scope.panesB = [{
@@ -88,7 +91,6 @@ function($scope,ngAnimate,searchFor) {
       content: "Content - 2"
     }
   ];
-  $scope.groupsString = JSON.stringify( $scope.groups);
 
   $scope.updateOpenStatus = function(){
     $scope.isOpen = $scope.groups.some(function(item){
@@ -96,10 +98,8 @@ function($scope,ngAnimate,searchFor) {
     });
   }
 
-}]).run(['$rootScope',function($rootScope){
-    console.log("Testing");
-  }]);
+}]);
 
 
 
-})(window.angular);
+})();
