@@ -3,9 +3,7 @@
     angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
-.run(['$rootScope',function($rootScope){
-    console.log("Testing");
-  }])
+
 .filter('searchFor', function() {
 
   // All filters must return a function. The first parameter
@@ -99,7 +97,9 @@ function($scope,searchFor) {
     });
   }
 
-}]);
+}]).run(['$rootScope',function($rootScope){
+    console.log("Testing");
+  }]);
 
 
 
