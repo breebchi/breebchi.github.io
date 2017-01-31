@@ -1,11 +1,11 @@
 (function() {
 //angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
-  var app =  angular.module('myApp', ['ngAnimate','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router']);
+  var app =  angular.module('myApp', ['ngAnimate','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router','searchFor']);
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
 
-app.controller('MainController',['$scope', 'searchFor',
-function($scope,searchFor) {
+app.controller('MainController',['$scope'
+function($scope) {
 
 
   // $scope.panesB = [{
