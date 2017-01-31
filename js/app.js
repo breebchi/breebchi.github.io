@@ -1,6 +1,6 @@
-(function() {
+
 //angular.module('myApp', ['ngRoute','ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router'])
-  var app =  angular.module('myApp', ['ngRoute','ngAnimate','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'ui.router','searchFor']);
+  var app =  angular.module('myApp', ['ui.router','ngAnimate','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages',  'searchFor']);
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
 
@@ -101,6 +101,3 @@ function($scope) {
 });
       // app.run(['$rootScope',function($rootScope){  console.log("Testing");  }]);
 
-
-
-})();
