@@ -4,7 +4,7 @@
 //var app = angular.module('myApp', ['ngAnimate', 'vAccordion','ngAria', 'ui.bootstrap', 'ngMaterial', 'ngMessages', 'ngRoute', 'ui.router']);
 
 
-app.controller('MainController',['$scope'
+app.controller('MainController',['$scope',
 function($scope) {
 
 
