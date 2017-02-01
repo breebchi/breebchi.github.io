@@ -2,7 +2,6 @@ body {
     margin: 60px auto;
      height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
