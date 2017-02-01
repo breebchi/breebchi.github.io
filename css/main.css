@@ -99,7 +99,7 @@ ul.posts li {
    min-width: 420px;*/
     min-width: 90%;
   max-height: 100%; 
-    min-height: 90%; 
+   /* min-height: 90%; */
   overflow: hidden;
 }
 
