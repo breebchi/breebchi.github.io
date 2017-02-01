@@ -2,7 +2,7 @@ $(document).ready(function () {
         $('ul.nav > li').click(function (e) {
                 console.log(e);
             //e.preventDefault();
-            $('ul.nav > li').removeClass('active');
+            $('ul.nav > li').find(".active").removeClass('active');
             $(e.target).addClass('active'); 
                //return $(this).attr('id');
                 return e.target;
