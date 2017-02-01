@@ -9,6 +9,6 @@ $(document).ready(function () {
             $('ul.nav > li').click(function (e) {
                  console.log(e.result);
                     var lastId = "'#"+e.result+"'";
-            $(lastId).addClass('active');  
+            $(document.getElementById(lastId)).addClass('active');  
         });            
     });
