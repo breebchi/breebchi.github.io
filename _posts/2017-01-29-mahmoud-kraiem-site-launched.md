@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mahmoud kraiem, science and tek enthusiast, Launches Site"
+title: "Mahmoud kraiem, science and tek enthusiast, finally has a personal page."
 date: 2017-01-29
 ---
 
