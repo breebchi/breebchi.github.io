@@ -4,7 +4,7 @@ $(document).ready(function () {
             e.preventDefault();
             $('ul.nav > li').removeClass('active');
             $(this).addClass('active'); 
-                return this.attr('id');
+                return $(this).attr('id');
         });
             $('ul.nav > li').click(function (e) {
                  console.log(e.result);
