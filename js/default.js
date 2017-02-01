@@ -8,7 +8,7 @@ $(document).ready(function () {
         });
             $('ul.nav > li').click(function (e) {
                  console.log(e.result);
-                    var lastId = "#"+e.result;
+                    var lastId = "'#"+e.result+"'";
             $(lastId).addClass('active');  
         });            
     });
