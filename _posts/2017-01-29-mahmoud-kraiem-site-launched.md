@@ -11,4 +11,4 @@ Well, I finally decided to do without that at this. Let's learn as we go shall w
 So I started with a tutorial by JONAHAN MCGLONE (http://jmcglone.com/). It's very simple and easy to follow and it doesn't require much prior knowloedge of Git or Jekyll. Try it out!
 This space will host information about me and where I'd occasionly write blog posts.
 Please do make suggesting on how I could make it better!
-Oh, and feel free to use any of my code snippets.
+Oh, and feel free to use any of my code snippets. I will write blog posts about them to talk about the context when it was written and to explain the technical aspects when it's worth it.
