@@ -1,71 +1,76 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="stylesheet" type="text/css" href="/css/sticky-footer-navbar.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <script src="/js/default.js"></script>
-
-			
-		</head>
-		<body>
-			<!--<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>-->
-			<nav class="navbar navbar-default navbar-fixed-top" role = "navigation">
-			<div class="navbar-inner">	
-        <div class="container-fluid">
-	 
-    <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbarCollapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-      <a class="navbar-brand" href="/">Mahmoud Kraiem</a>
-    </div>
-		<div class="collapse navbar-collapse navbarCollapse">
-               <ul class="nav navbar-nav">
-      <li id="navhome"><a href="/">Home</a></li>
-	<li id="navaboutme"><a href="/about">About me</a></li>
-	     <li id="navcv"><a href="/cv">CV</a></li>
-	    <li id="navblog"><a href="/blog">Blog</a></li>
-    </ul>
-            </div>
-    </div>
-  </div>
-</nav>
-			
-			<div class="jumbotron  vertical-center">
-				<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
+<html>
+<head>
+	<title>{{ page.title }}</title><!-- link to main stylesheet -->
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="/css/main.css" rel="stylesheet" type="text/css">
+	<link href="/css/sticky-footer-navbar.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<script src="/js/default.js">
+	</script>
+</head>
+<body>
+	<!--<nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            </nav>-->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-inner">
+			<div class="container-fluid" style="background-color: aliceblue;">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target=".navbarCollapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="/">Mahmoud Kraiem</a>
 				</div>
-			
-			<footer class="footer navbar-fixed-bottom">
-				 <div class="container text-muted">
-     
-	    		<ul>
-	        		<li><a href="mailto:mahmoud.kraiem@gmail.com">Email</a></li>
-            <li><a href="https://in.linkedin.com/in/mahmoudkraiem">Linkedin</a></li>
-        		<li><a href="https://github.com/breebchi">Github</a></li>
-				<li><a href="https://breebchi.github.io/blog/atom.xml">RSS feed</a></li>
-				</ul>
-					  </div>
-			</footer>
-		</body>
-	</html>
+				<div class="collapse navbar-collapse navbarCollapse">
+					<ul class="nav navbar-nav">
+						<li id="navhome">
+							<a href="/">Home</a>
+						</li>
+						<li id="navaboutme">
+							<a href="/about">About me</a>
+						</li>
+						<li id="navcv">
+							<a href="/cv">CV</a>
+						</li>
+						<li id="navblog">
+							<a href="/blog">Blog</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron vertical-center"  style=" background-color: ghostwhite;">
+		<div class="container">
+			{{ content }}
+		</div><!-- /.container -->
+	</div>
+	<footer class="footer navbar-fixed-bottom" style="background-color: aliceblue;">
+		<div class="container text-muted">
+			<ul>
+				<li>
+					<a href="mailto:mahmoud.kraiem@gmail.com">Email</a>
+				</li>
+				<li>
+					<a href="https://in.linkedin.com/in/mahmoudkraiem">Linkedin</a>
+				</li>
+				<li>
+					<a href="https://github.com/breebchi">Github</a>
+				</li>
+				<li>
+					<a href="https://breebchi.github.io/blog/atom.xml">RSS feed</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
