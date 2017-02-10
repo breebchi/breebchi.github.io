@@ -53,8 +53,8 @@ div.full-page {
 
 
 .jumbotron.vertical-center {
-  margin-bottom: 7%; /* Remove the default bottom margin of .jumbotron */
-     margin-top: 7%;
+  /*margin-bottom: 0;*/ /* Remove the default bottom margin of .jumbotron */
+     /*margin-top: 0;*/
 }
 
 .vertical-center {
