@@ -4,12 +4,15 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     }
 });
 
-  vpw = $(window).width();
+ 
+ $(document).ready(function(){
+	 
+	  vpw = $(window).width();
     vph = $(window).height();
 
     $('.full-page').height(vph);
 
- $(document).ready(function(){
+	 
 	    // Add smooth scrolling to all links
 	    $("#cv").on('click', function(event) {
 
