@@ -43,6 +43,10 @@ ul.posts li {
     list-style: none;
 }
 
+section {
+    min-height: 100%;
+}
+
 .jumbotron.vertical-center {
   margin-bottom: 0; /* Remove the default bottom margin of .jumbotron */
 }
@@ -151,4 +155,3 @@ ul.posts li {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-
